@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIDEBAR</title>
+</head>
+<style>
+    nav{
+        background: #fcf;
+        height: 80px;
+        padding: 10px;
+        #btn{
+            padding: 15px;outline: none; border: 0;background: #ccc;cursor: pointer;
+
+        }
+    }
+    .sidebar{
+  width: 180px;
+  height: 100vh;
+  background: red;
+  transition: transform 2s ease-in-out 1s;
+  transform: scale(50px);
+  display: none;
+    }
+</style>
+<body>
+    
+
+<nav>
+<button id="btn" onclick="myFun()">Click Me</button>
+</nav>
+
+<div class="sidebar">
+</div>
+
+<script>
+var btn = document.querySelector("#btn")
+var sidebar = document.querySelector(".sidebar")
+
+function myFun(){
+sidebar.style.display="block"
+sidebar.style.transition="all 1s"
+console.log(sidebar)
+
+}
+
+</script>
+
+</body>
+</html>
